@@ -1,0 +1,44 @@
+% Please add the following required packages to your document preamble:
+% \usepackage{graphicx}
+% \usepackage[normalem]{ulem}
+% \useunder{\uline}{\ul}{}
+\definecolor{Gray}{gray}{0.9}
+\begin{table}[!t]
+\caption{Notation lookup table}
+\centering
+% \vspace{-0.1in}
+\footnotesize
+
+% \scriptsize
+%  \fontsize{5}{6}\selectfont
+% \tiny
+% \captionsetup{font=smaller}
+% \small
+% \fontsize{5.0pt}{5.0pt}\selectfont
+% \resizebox{1.0\columnwidth}{!}{%
+\setlength\extrarowheight{2pt} % for a bit of visual "breathing space"
+\begin{tabularx}{0.49\textwidth}{|l|X|}
+\hline
+
+{\textbf{Symbol}}     & {\textbf{Definition}}                           \\ \hline\rowcolor{Gray}
+$V$                 	  & Set of vehicles                                                                               \\ \hline
+$C$                       & Set of chargers                                                                               \\ \hline\rowcolor{Gray}
+$\theta^t$                & Set of charging plan for all chargers, with $\theta^i_t$ denoting the plan for $c_i \in C$    \\ \hline
+$\ell_t$                  & Building power consumption at time $t$                                                                              \\ \hline\rowcolor{Gray}
+$S$                       & Set of states                                                                                 \\ \hline
+$A$                       & Set of all feasible actions                                                                   \\ \hline\rowcolor{Gray}
+$P$                  	  & State transition function                                                                     \\ \hline
+$T$                       & Temporal distribution over transitions                                                        \\ \hline\rowcolor{Gray}
+$R$                       & Instantaneous reward function                                                                 \\ \hline
+$\gamma$                  & Discount factor for future rewards                                                            \\ \hline\rowcolor{Gray}
+$vloc_t$                  & Vehicle location                                                                              \\ \hline
+$c(V^i)$                  & Capacity of vehicle                                                                           \\ \hline\rowcolor{Gray}
+$o(V^i_t)$                & Occupancy of vehicle at time $t$                                                              \\ \hline
+$w(V^i_t)$                & Status of vehicle at time $t$                                                                 \\ \hline\rowcolor{Gray}
+$C$                       & Explore and exploit parameter                                                                 \\ \hline
+$E$                       & Generative model                       \\ \hline
+\end{tabularx}%
+% }
+% \vspace{-0.2in}
+\label{tab:symbols}
+\end{table}

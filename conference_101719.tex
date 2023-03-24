@@ -1,0 +1,134 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+% \usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+% \usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+    
+% Added package for samples
+\usepackage{blindtext}
+
+% For plots
+\usepackage{tikz}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+
+\usetikzlibrary{backgrounds,calc}
+\usepgfplotslibrary{groupplots}
+\usepgfplotslibrary{dateplot}
+% Compat is for compatible, width is to make sure all are uniform
+\pgfplotsset{width=1.0\columnwidth,compat=1.9}
+
+% For subfigures
+\usepackage{subcaption}
+
+% For table
+\usepackage{tabularx,ragged2e}
+\usepackage{soul}
+\usepackage{color, colortbl}
+\usepackage[normalem]{ulem}
+\useunder{\uline}{\ul}{}
+
+% For balance
+\usepackage{balance}
+
+% For urls
+\usepackage{url}
+\usepackage[breaklinks]{hyperref}
+
+% For algorithms
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+\newcommand*{\argminl}{\argmin\limits}
+\newcommand*{\argmaxl}{\argmax\limits}
+\algnewcommand\algorithmicforeach{\textbf{for each}}
+\algdef{S}[FOR]{ForEach}[1]{\algorithmicforeach\ #1\ \algorithmicdo}
+
+% For bibliography to add citeauthor
+\usepackage[numbers]{natbib}
+% Change bibliography to IEEEtranN
+% https://tex.stackexchange.com/questions/202963/how-to-cite-author-in-ieee-format
+
+% For notes and comments from others
+\usepackage[textsize=tiny, textwidth=1.3cm]{todonotes}
+\newcommand{\jp}[1]{\todo[backgroundcolor=red!50,inline,linecolor=black!50]{\textbf{JP:} #1}}
+
+\begin{document}
+
+\title{Conference Paper Title*\\
+{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
+should not be used}
+\thanks{Identify applicable funding agency here. If none, delete this.}
+}
+
+\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+\and
+\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
+\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+email address or ORCID}
+}
+
+\maketitle
+
+\begin{abstract}
+This document is a model and instructions for \LaTeX.
+This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
+or Math in Paper Title or Abstract.
+\end{abstract}
+
+\begin{IEEEkeywords}
+component, formatting, style, styling, insert
+\end{IEEEkeywords}
+
+\section{Introduction}
+\input{sections/Readme}
+
+
+\section*{Acknowledgment}
+
+\textcolor{red}{Remember to ask if your paper needs to have some Acknowledgments section.}
+
+\balance
+% \bibliographystyle{ieeetr}
+\bibliographystyle{IEEEtranN}
+\bibliography{references}
+
+\end{document}
